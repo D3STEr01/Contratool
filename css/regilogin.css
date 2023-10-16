@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    background-color:  #555;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #2E2D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+
+.left-login > h1 {
+    color: aliceblue;
+    margin-right: 50%;
+    font-size: 2vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2E2D2D;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px black;
+}
+.card-login > img{
+    width: 50%;
+}
+.card-login > h3{
+    color: aliceblue;
+    font-weight: 800;
+    margin: 0;
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #444343;
+    color: aliceblue;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;  
+}
+
+.textfield > label{
+    color: aliceblue;
+    margin-bottom: 10px;
+
+}
+
+.textfield >input::placeholder{
+    color: aliceblue;
+}
+
+.btn-senha{
+    width: 70%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: rgb(55, 55, 182);
+    cursor: pointer;
+    margin-left: 15%
+}
+.left-login > iframe{
+    width: 90%;
+    height: 50%;
+    box-shadow: 5px 5px 40px #000;
+    
+}
+#linha-vertical {
+    height: 80%;
+    margin-left: 5%;
+    border-right: 1px solid white;
+
+
+}
+
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 85%;
+    }
+    #linha-vertical{
+        height: 0%;
+      }
+
+    .textfield{
+        width: 60vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+  .main-login{
+    flex-direction: column;
+  }
+  .left-login > h1{
+    display: none;
+  }
+  .left-login{
+    width: 100%;
+    height: auto;
+  }
+  .right-login{
+    width: 100%;
+    height: auto;
+  }
+  .left-login > iframe{
+    width: 50vw;
+  }
+  .card-login{
+    width: 90%;
+  }
+  #linha-vertical{
+    height: 0%;
+  }
+  .textfield{
+    width: 60vw;
+  }
+}
+.btn-login:hover{
+    background-color: rgb(93, 93, 211);
+}
+

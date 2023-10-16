@@ -1,0 +1,151 @@
+/* The side navigation menu */
+body{
+    background-color:  #555;
+    font-family: 'Open Sans', sans-serif;
+  } 
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #2E2D2D;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    /* Sidebar links */
+    .sidebar a {
+      display: block;
+      color: rgb(255, 255, 255);
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+  
+    .card-login{
+      justify-content: center;
+      display: flex;
+      color: white;
+      width: 60%;
+      padding: 0px 300px;
+      background: #2E2D2D;
+      border-radius: 10px;
+      box-shadow: 5px 10px 40px black;
+      border: 1px solid rgb(13, 45, 221);
+      margin-left: 18%; 
+      margin-top: 5%;   
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .card-login > h3{
+  
+    color: aliceblue;
+    font-weight: 650;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  
+  .textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 0px;
+  }
+  
+  .textfield > input{
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #444343;
+    color: aliceblue;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;  
+  }
+  
+  .textfield > label{
+    color: aliceblue;
+    margin-bottom: 2px;
+  
+  }
+  
+  .textfield >input::placeholder{
+    color: aliceblue;
+  }
+  
+  .btn-login{
+    width: 70%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 450;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: rgb(55, 55, 182);
+    cursor: pointer;
+    margin-left: 15%
+  }
+  
+  
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+      .sidebar > hr{
+        width: 0%;
+        height: 0%;
+      }
+    }
+    .sidebar > img{
+      width: 100%;
+    }
+  
+  .content{
+      background-image: url('../img/clone2.png');
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  
+  .item > img{
+    width: 5vw;
+  }
+  
+  

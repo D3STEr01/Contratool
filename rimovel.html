@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--------------------------------SANDRO HENRIQUE DE AMORIM SILVA GUEDES --------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/rcliente.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+  <img src="img/SASAS.png" alt="">
+  <br>
+  <br>
+  <hr>
+  <a href="imovel.html">Imóveis</a>
+  <a href="cliente.html">Clientes</a>
+  <a href="contrato.html">Contratos</a>
+  <hr>
+  <a href="#news">+ Registrar Imóvel</a>
+  <a href="#contact">+ Registrar Contrato</a>
+  <a class="nav-link disabled" href="#about">+ Registrar Cliente</a>
+  <hr>
+  <a href="configuser.php">Configuração</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+        <div class="card-login">
+           <h3>Registro Imóvel</h3>
+
+            <form method="post" name="cad-Cliente">
+            <div class="textfield">
+                <label>Uf</label>
+                <input type="text" name="cpf" id="cpf" " >
+                
+            </div> 
+            <div class="textfield">
+                <label>Cep</label>
+                <input type="text" name="nome" id="nome" ">
+                
+            </div>    
+            <div class="textfield">
+                <label>Cidade</label>
+                <input type="text" name="email" id="email">
+                
+            </div> 
+            <div class="textfield">
+                <label>Bairro</label>
+                <input type="tel" name="telefone" id="telefone" >
+                
+            </div>
+            <div class="textfield">
+                <label>Endereço</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            <div class="textfield">
+                <label>Numero Imv</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            <input placeholder="Tipo:" class="textfield" list="browsers">
+
+                <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Google Chrome">
+                <option value="Opera">
+                <option value="Safari">
+                </datalist>
+
+                <input placeholder="Finalidade:" class="textfield" list="browsers">
+
+                <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Google Chrome">
+                <option value="Opera">
+                <option value="Safari">
+                </datalist>
+ 
+            
+                <input type="submit" class="btn-login" value="Cadastrar" name="CadCliente">
+
+        </form>
+        <a class="a" href="index.php">Voltar para página principal</a>
+        </div>
+
+</div>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
